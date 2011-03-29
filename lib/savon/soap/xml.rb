@@ -175,7 +175,7 @@ module Savon
       # Returns the SOAP body as an XML String.
       def body_to_xml
         return body.to_s unless body.kind_of? Hash
-        unless namespaces_identifier == :wsdl
+        unless namespace_identifier == :wsdl
           Gyoku.xml body, :element_form_default => element_form_default
         else
           Gyoku.xml body, :element_form_default => element_form_default, :namespace => namespace_identifier
