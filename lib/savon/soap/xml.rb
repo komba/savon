@@ -82,7 +82,7 @@ module Savon
 
       # Returns the SOAP envelope namespace. Defaults to :env.
       def env_namespace
-        @env_namespace ||= :env
+        @env_namespace ||= :soap
       end
 
       # Sets the +namespaces+ Hash.
